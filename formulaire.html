@@ -1,0 +1,211 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTOPIA - Formulaire</title>
+    <style>
+        body {
+            font-family: 'Courier', monospace;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+            text-align: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #333; 
+            color: #fff; 
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Courier', monospace;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555; 
+        }
+    </style>
+</head>
+
+<body>
+    <BR>
+    <h2>Help us in creating this utopia</h2>
+    <BR>
+    <form action="final.html" method="get">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="date_naissance">Date de naissance:</label>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+        <label for="adresse_mail">Adresse mail:</label>
+        <input type="email" id="adresse_mail" name="adresse_mail" required><br><br>
+
+        <label for="pays">Pays:</label>
+        <input type="text" id="pays" name="pays" list="liste_pays" required><br><br>
+
+        <datalist id="liste_pays">
+            <option value="Afghanistan">
+            <option value="Afrique du Sud">
+            <option value="Albanie">
+            <option value="Algérie">
+            <option value="Allemagne">
+            <option value="Andorre">
+            <option value="Angola">
+            <option value="Antigua-et-Barbuda">
+            <option value="Arabie Saoudite">
+            <option value="Argentine">
+            <option value="Arménie">
+            <option value="Australie">
+            <option value="Autriche">
+            <option value="Azerbaïdjan">
+            <option value="Bahamas">
+            <option value="Bahreïn">
+            <option value="Bangladesh">
+            <option value="Barbade">
+            <option value="Belgique">
+            <option value="Belize">
+            <option value="Bénin">
+            <option value="Bhoutan">
+            <option value="Biélorussie">
+            <option value="Birmanie">
+            <option value="Bolivie">
+            <option value="Bosnie-Herzégovine">
+            <option value="Botswana">
+            <option value="Brésil">
+            <option value="Brunei">
+            <option value="Bulgarie">
+            <option value="Burkina Faso">
+            <option value="Burundi">
+            <option value="Cambodge">
+            <option value="Cameroun">
+            <option value="Canada">
+            <option value="Cap-Vert">
+            <option value="Chili">
+            <option value="Chine">
+            <option value="Chypre">
+            <option value="Colombie">
+            <option value="Comores">
+            <option value="Congo-Brazzaville">
+            <option value="Congo-Kinshasa">
+            <option value="Corée du Nord">
+            <option value="Corée du Sud">
+            <option value="Costa Rica">
+            <option value="Côte d'Ivoire">
+            <option value="Croatie">
+            <option value="Cuba">
+            <option value="Danemark">
+            <option value="Djibouti">
+            <option value="Dominique">
+            <option value="Égypte">
+            <option value="Émirats arabes unis">
+            <option value="Équateur">
+            <option value="Érythrée">
+            <option value="Espagne">
+            <option value="Estonie">
+            <option value="États-Unis">
+            <option value="Éthiopie">
+            <option value="Fidji">
+            <option value="Finlande">
+            <option value="France">
+            <option value="Gabon">
+            <option value="Gambie">
+            <option value="Géorgie">
+            <option value="Ghana">
+            <option value="Grèce">
+            <option value="Grenade">
+            <option value="Guatemala">
+            <option value="Guinée">
+            <option value="Guinée-Bissau">
+            <option value="Guinée équatoriale">
+            <option value="Guyana">
+            <option value="Haïti">
+            <option value="Honduras">
+            <option value="Hongrie">
+            <option value="Inde">
+            <option value="Indonésie">
+            <option value="Iran">
+            <option value="Iraq">
+            <option value="Irlande">
+            <option value="Islande">
+            <option value="Israël">
+            <option value="Italie">
+            <option value="Jamaïque">
+            <option value="Japon">
+            <option value="Jordanie">
+            <option value="Kazakhstan">
+            <option value="Kenya">
+            <option value="Kirghizistan">
+            <option value="Kiribati">
+            <option value="Koweït">
+            <option value="Laos">
+            <option value="Lesotho">
+            <option value="Lettonie">
+            <option value="Liban">
+            <option value="Liberia">
+            <option value="Libye">
+          </datalist>
+
+          <label for="taille_haut">Taille haut:</label>
+          <input type="number" id="taille_haut" name="taille_haut" required><br><br>
+        
+          <label for="taille_bas">Taille bas:</label>
+          <input type="number" id="taille_bas" name="taille_bas" required><br><br>
+        
+          <label for="pointure_chaussure">Pointure de chaussure:</label>
+          <input type="number" id="pointure_chaussure" name="pointure_chaussure" required><br><br>
+        
+        <label for="vetement">Vêtement:</label>
+        <input type="text" id="vetement" name="vetement" list="liste_vetement" required><br><br>
+
+        <datalist id="liste_vetement">
+            <option value="Regular">
+            <option value="Oversize">
+        </datalist>
+
+       
+        <input type="submit" value="Confirmer" class="center-text">
+    </form>
+</body>
+
+</html>

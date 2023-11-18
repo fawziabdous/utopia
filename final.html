@@ -1,0 +1,31 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000000; /* Fond gris */
+        }
+
+        video {
+            width: 80%; /* Ajustez la largeur de la vidéo selon vos besoins */
+            max-width: 800px; /* Définissez une largeur maximale pour la vidéo */
+            height: auto; /* La hauteur sera ajustée proportionnellement à la largeur */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <video controls autoplay>
+        <source src="videos/TSBE.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+</body>
+</html>

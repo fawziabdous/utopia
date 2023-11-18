@@ -1,0 +1,88 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTOPIA - Accueil</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS externe -->
+    <style>
+        body {
+            position: relative;
+        }
+
+        #volume-container {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        #volume-slider {
+            width: 100px;
+            background-color: #fff; /* Couleur de fond blanc */
+            border: 1px solid #333; /* Bordure gris foncé */
+            height: 10px; /* Hauteur du slider */
+            border-radius: 5px; /* Coins arrondis */
+            margin-right: 10px; /* Marge à droite pour l'espacement */
+        }
+
+        #mute-button {
+            background-color: #000; /* Couleur de fond gris foncé */
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Effet de transition sur la couleur de fond */
+        }
+
+        #mute-button:hover {
+            background-color: #333; /* Nouvelle couleur de fond au survol */
+        }
+    </style>
+</head>
+<body>
+
+<audio id="background-music" autoplay loop>
+    <source src="musics/travis1.mp3" type="audio/mp3">
+    <!-- Ajoutez des balises source supplémentaires pour prendre en charge différents formats de fichiers audio -->
+    <!-- Par exemple : <source src="votre-musique.ogg" type="audio/ogg"> -->
+    Your browser does not support the audio element.
+</audio>
+
+<div id="volume-container">
+    <input type="range" id="volume-slider" min="0" max="100" step="1" value="50" oninput="changeVolume(this.value)">
+    <button id="mute-button" onclick="toggleMute()">Mute</button>
+</div>
+
+<BR><BR><BR><BR><BR><BR>
+    <img id="header-image" src="images/utopia.png.webp" alt="Image d'accueil">
+
+    <h1>WELCOME TO THE UTOPIA</h1>
+    <p>Step into a world where style knows no bounds, and fashion meets utopia. Welcome to the Utopie, where every garment tells a story of limitless expression and bold individuality.</p>
+
+    <!-- Formulaire de redirection -->
+    <form id="redirect-form" action="formulaire.html" method="GET">
+        <input type="submit" value="START" class="start-button">
+    </form>
+
+<script>
+    var music = document.getElementById("background-music");
+
+    function toggleMute() {
+        if (music.paused) {
+            music.play();
+            document.getElementById("mute-button").innerText = "Mute";
+        } else {
+            music.pause();
+            document.getElementById("mute-button").innerText = "Unmute";
+        }
+    }
+
+    function changeVolume(volume) {
+        music.volume = volume / 100;
+    }
+</script>
+
+</body>
+</html>

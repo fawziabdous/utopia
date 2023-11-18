@@ -1,0 +1,48 @@
+body {
+    background-color: #f7f7f7; /* Fond gris clair */
+    text-align: center; /* Texte centré */
+    padding: 50px;
+    font-family: 'Courier', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractères épurée */
+}
+
+#container {
+    max-width: 600px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+}
+
+#header-image {
+    max-width: 30%; /* Réduction de la largeur maximale de l'image à 30% */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 0; /* Retirer la bordure arrondie de l'image */
+   }
+
+h1 {
+    color: #333333; /* Couleur du texte */
+    font-size: 24px; /* Taille de police pour le titre */
+}
+
+p {
+    color: #555555; /* Couleur du texte */
+    font-size: 16px; /* Taille de police pour le paragraphe */
+}
+
+#redirect-form {
+    margin-top: 20px;
+    display: inline-block; /* Pour aligner le formulaire à côté du texte */
+}
+
+input[type="submit"] {
+    background-color: #343a40; /* Couleur du fond du bouton gris foncé */
+    color: #ffffff; /* Couleur du texte du bouton */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Ajout d'une transition pour un effet de survol */
+}
+
+input[type="submit"]:hover {
+    background-color: #1d2124; /* Changement de couleur au survol */
+}
